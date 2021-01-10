@@ -45,7 +45,7 @@ img {
   position: fixed;
   top: 0;
   font-size: 1.2rem;
-  // position: fixed;
+  position: fixed;
   padding: 1rem;
   display: flex;
   justify-content:space-between;
