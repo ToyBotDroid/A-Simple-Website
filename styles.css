@@ -43,7 +43,7 @@ img {
 }
 
 #nav-bar{
-  position: fixed;
+  position: absolute;
   top: 0;
   font-size: 1.2rem;
   padding: 1rem;
@@ -52,6 +52,7 @@ img {
   width: 100vw;
   border-bottom: 5px solid #546E7A;
   overflow: none;
+  z-index: 5;
 }
 
 
@@ -117,4 +118,95 @@ footer{
 .dark-theme {
   background-color: #000;
   color: #ddd;
+}
+
+#responsive-menu{
+  display: none;
+}
+
+/* media query */
+
+@media only screen and (max-width: 800px){
+  
+  .menu-content{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0;
+    left: 100vw;
+    overflow: scroll;
+    border-left: 5px solid #546E7A;
+  } 
+  .menu-content.active{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-around; 
+    top: 0;
+    left: 10vw;
+    overflow: scroll; 
+  }
+
+
+  
+  .menu-content li{
+    display: block;
+    padding: 0 100px;
+  }
+
+  #main-docs{
+    justify-content: top;
+  }
+
+  #responsive-menu{
+    display: flex;
+  }
+
+  .menu-btn{
+    border-radius: 50%;
+    border: 2px solid white;
+    background: url("https://i.ibb.co/Km5Xy4T/menu.png");
+    background-color: #000;
+    /* bg-color important to give after url...but why? */
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    cursor: pointer;
+    /* position: relative; */
+    height: 30px;
+    width: 30px;
+    margin: 0 15px;
+  }
+
+  .menu-btn.active{
+    background: url("https://i.ibb.co/QfjyJp3/close.png");
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+    top: 20px;
+    right: 40px;
+
+    z-index: 50;
+  }
+  
+
+}
+
+
+@media only screen and (max-width: 360px){
+
+  #main-docs{
+    margin-top: 150px;
+  }
+
+
 }
