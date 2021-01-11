@@ -7,13 +7,19 @@
 //      }
 // });
 
-const btn = document.querySelector('#btn-mode');
+
+// Primiary reference selection
+
+const modeBtn = document.querySelector('#btn-mode');
 const nav = document.querySelector('#nav-bar');
 const menuListItems = document.querySelector(".menu-content");
-const menuBtn = 
+const menuBtn = document.querySelector(".menu-btn")
+const navContent = document.querySelector(".menu-content")
 
-btn.addEventListener("change", () => {
-  if( btn.checked === true){
+// Dark-Light Mode
+
+modeBtn.addEventListener("change", () => {
+  if( modeBtn.checked === true){
       document.body.classList.remove("light-theme");
       document.body.classList.add("dark-theme");      
       nav.classList.remove("light-theme");
@@ -30,3 +36,14 @@ btn.addEventListener("change", () => {
       
   }
 });
+
+// Responsive Nav Bar
+
+menuBtn.addEventListener("click",() => {
+  navToggle();
+})
+
+function navToggle(){
+  menuBtn.classList.toggle("active");
+  navContent.classList.toggle('active')
+}
