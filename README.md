@@ -8,4 +8,5 @@ Dark Theme
 
 Modal
 
-Also practising vs code github
+Also practising github with vs-code
+
