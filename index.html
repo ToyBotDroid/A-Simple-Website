@@ -17,27 +17,19 @@
 
       <nav id="nav-bar" class="light-theme">
         <span class="logo">Logo</span>
-
-    <!-- Responsive Menu Absolute Position -->
-    
-    <div id="responsive-menu">
-      <div class="menu">Menu</div>
-      <div class="menu-btn"></div> 
-    </div>     
-    
-    
-
-
-    <!--     <div class="menu-btn"></div> -->
+        <!-- Responsive Menu Absolute Position -->
+        <div id="responsive-menu">
+          <div class="menu">Menu</div>
+          <div class="menu-btn"></div> 
+        </div>     
         <ul class="menu-content light-theme">
           <li><div><input id="btn-mode" type="checkbox"> Dark Mode</div>
           </li>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Socials">Socials</a></li>
-            <li><a href="#Blog">Blog</a></li>
-            <li><a href="#Archive">Archive</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a class="nav-link" a href="#Home">Home</a></li>
+            <li><a class="nav-link" a href="#About">About</a></li>
+            <li><a class="nav-link" a href="#Blog">Blog</a></li>
+            <li><a class="nav-link" a href="#Archive">Archive</a></li>
+            <li><a class="nav-link" a href="#Contact">Contact</a></li>
           </ul>
     
       </nav>
@@ -47,10 +39,18 @@
       
       <main id="main-docs">    
         <section id="Home" class="container py-1">
-          <h1 class="padding">A Simple Website</h1>
+          <h1 class="padding lead-heading">A Simple Website</h1>
           <p class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit id minus esse voluptate, inventore, a hic dolore numquam laudantium quasi atque quod omnis ex. Aut ullam maiores nemo aliquam in quis assumenda,Quis reiciendis dolorum beatae architecto nostrum porro molestias fugit iste quos, tempore quam labore saepe corporis, asperiores doloremque.</p>
           <div class='py-3'>
             <button class='modal-btn'> Click for Modal </button>
+          </div>
+          <!-- Modal pop up -->
+          <div class="modal-wrapper">
+            <div class="modal-content">
+              <div class="modal-close">X</div>
+              <div class="modal-heading">A wild pop-up appeared!</div>
+              <div class="modal-mesage"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, saepe?</div>
+            </div>
           </div>
         </section>
           
@@ -66,11 +66,6 @@
 
         <section id="Blog" class='container py-1'>
           <h2 class='text-center'>Blog</h2>
-          <p></p>
-        </section>
-
-        <section id="Socials" class='container py-1'>
-          <h2 class='text-center'>Socials & Gallery</h2>
           <p></p>
         </section>
 
